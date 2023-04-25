@@ -36,9 +36,6 @@ services:
       dockerfile: Dockerfile
     command: bash -c "alembic upgrade +4 && uvicorn app.main:app --host 0.0.0.0 --port 8888 || uvicorn app.main:app --host 0.0.0.0 --port 8888"
     tty: true
-    volumes:
-      - ./backend:/app/:cached
-      - ./.docker/.ipython:/root/.ipython:cached
     environment:
       PYTHONPATH: .
       DATABASE_URL: 'postgresql://user:userpass@postgres:5432/user'
