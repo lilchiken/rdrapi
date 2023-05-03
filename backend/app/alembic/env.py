@@ -10,7 +10,6 @@ import os
 
 sys.path = ['', '..'] + sys.path[1:]
 
-from app.core.config import postgres
 from app.db.base import Base
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -33,8 +32,10 @@ target_metadata = Base.metadata
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
 
+
 def get_url():
     return os.getenv('DATABASE_URL')
+
 
 def run_migrations_offline():
     """Run migrations in 'offline' mode.

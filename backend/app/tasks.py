@@ -6,6 +6,7 @@ from app.core.config import conf
 
 email_set = conf.get('name_mails_set')
 
+
 @celery_app.task
 def send_email(email: str):
     if rediscli.sismember(email_set, email):

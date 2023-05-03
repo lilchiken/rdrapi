@@ -19,6 +19,7 @@ SessionLocal = sessionmaker(
 
 Base = declarative_base()
 
+
 def get_db() -> Generator:
     """Dependency for getting async session."""
 
