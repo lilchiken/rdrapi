@@ -50,8 +50,7 @@ $ docker-compose up -d
 ## 🤝 Contributing
 
 1. I'm need more data about Red Dead Redemption. (Send me data like json in Pull requests or send me email)
-2. API port forwarding to the main nginx server.
-3. Free VPS/VDS for deploying project.
+2. Free VPS/VDS for deploying project.
 
 ## ⭐️ Support
 
